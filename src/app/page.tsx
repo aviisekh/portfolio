@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import GitHubStats from "@/components/GitHubStats";
 import BlogPosts from "@/components/BlogPosts";
@@ -12,8 +12,8 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <Experience />
       <Skills />
+      <Experience />
       <Education />
       <GitHubStats />
       <BlogPosts />
