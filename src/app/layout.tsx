@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 // Replace with your actual Google Analytics measurement ID
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-6ZKLES8ZJG";
 
 export default function RootLayout({
   children,
