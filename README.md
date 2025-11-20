@@ -48,7 +48,7 @@ This project is configured to deploy to GitHub Pages automatically.
 
 2. **Push your code:**
    - The GitHub Actions workflow will automatically build and deploy your site when you push to the `main` branch
-   - The site will be available at: `https://<username>.github.io/senior-software-engineer-portfolio/`
+   - The site will be available at: `https://<username>.github.io/portfolio/`
 
 ### Manual Build (Optional)
 

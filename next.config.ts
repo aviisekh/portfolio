@@ -4,7 +4,7 @@ import path from "node:path";
 const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'senior-software-engineer-portfolio';
+const repoName = 'portfolio';
 
 const nextConfig: NextConfig = {
   output: isProd ? 'export' : undefined,
