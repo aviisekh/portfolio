@@ -3,7 +3,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import SectionHeading from "@/components/SectionHeading";
 import { Layers, Puzzle, Brain, Gauge, Mail, Truck } from "lucide-react";
 
 const projects = [
@@ -78,10 +77,21 @@ export default function Projects() {
   return (
     <section id="work" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <SectionHeading
-          title="Selected Work"
-          subtitle="A few systems I designed or owned, and the problem each one solved"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 flex items-center gap-3">
+            <Layers className="h-8 w-8 text-primary" />
+            Selected Work
+          </h2>
+          <p className="text-muted-foreground">
+            A few systems I designed or owned, and the problem each one solved
+          </p>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => {

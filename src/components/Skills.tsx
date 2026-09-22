@@ -2,9 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Database, Code2, Cloud, Brain, Package, Wrench } from "lucide-react";
+import { Zap, Database, Code2, Cloud, Brain, Package, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
-import SectionHeading from "@/components/SectionHeading";
 
 const skillCategories = [
   {
@@ -58,10 +57,19 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <SectionHeading
-          title="Skills"
-          subtitle="Tools and patterns I use in production"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 flex items-center gap-3">
+            <Zap className="h-8 w-8 text-primary" />
+            Skills
+          </h2>
+          <p className="text-muted-foreground">Tools and patterns I use in production</p>
+        </motion.div>
 
         {/* Tech Stack */}
         <motion.div

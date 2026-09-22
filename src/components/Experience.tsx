@@ -3,7 +3,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import SectionHeading from "@/components/SectionHeading";
 import { Briefcase, Code, Server, Users, TrendingUp, Cpu, GraduationCap } from "lucide-react";
 
 const experiences = [
@@ -133,10 +132,19 @@ export default function Experience() {
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
-        <SectionHeading
-          title="Experience"
-          subtitle="8+ years building and scaling production SaaS for US-based companies, remotely"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 flex items-center gap-3">
+            <Briefcase className="h-8 w-8 text-primary" />
+            Experience
+          </h2>
+          <p className="text-muted-foreground">8+ years building and scaling production SaaS for US-based companies, remotely</p>
+        </motion.div>
 
         <motion.div
           variants={container}
