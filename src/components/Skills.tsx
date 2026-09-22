@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TrendingUp, DollarSign, Zap, Database, Code2, Cloud, Brain, Package, Wrench } from "lucide-react";
+import { Zap, Database, Code2, Cloud, Brain, Package, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
 
 const skillCategories = [
@@ -38,30 +38,6 @@ const skillCategories = [
   }
 ];
 
-const accomplishments = [
-  {
-    icon: DollarSign,
-    title: "76% infrastructure cost reduction",
-    description: "Took FleetPanda from $5,000 to $1,200/month through API optimisation, query tuning, and eliminating wasteful frontend call patterns",
-    color: "text-green-600 dark:text-green-400",
-    bgColor: "bg-green-500/10"
-  },
-  {
-    icon: TrendingUp,
-    title: "30% faster database",
-    description: "Removed N+1 bottlenecks, introduced pagination and database views on the most-trafficked views",
-    color: "text-blue-600 dark:text-blue-400",
-    bgColor: "bg-blue-500/10"
-  },
-  {
-    icon: Database,
-    title: "Legacy to modern migration",
-    description: "Migrated Rails 4 schema-per-tenant multi-tenancy to Rails 6 single-schema multi-tenancy without disrupting customers",
-    color: "text-purple-600 dark:text-purple-400",
-    bgColor: "bg-purple-500/10"
-  }
-];
-
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -90,35 +66,9 @@ export default function Skills() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 flex items-center gap-3">
             <Zap className="h-8 w-8 text-primary" />
-            Skills & Expertise
+            Skills
           </h2>
-          <p className="text-muted-foreground">Technical skills and key accomplishments</p>
-        </motion.div>
-
-        {/* Accomplishments */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
-        >
-          {accomplishments.map((accomplishment, index) => {
-            const Icon = accomplishment.icon;
-            return (
-              <motion.div key={index} variants={item}>
-                <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:border-primary/50 group">
-                  <CardContent className="pt-6">
-                    <div className={`inline-flex p-3 rounded-lg ${accomplishment.bgColor} mb-4 group-hover:scale-110 transition-transform`}>
-                      <Icon className={`h-10 w-10 ${accomplishment.color}`} />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-2">{accomplishment.title}</h3>
-                    <p className="text-sm text-muted-foreground">{accomplishment.description}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            );
-          })}
+          <p className="text-muted-foreground">Tools and patterns I use in production</p>
         </motion.div>
 
         {/* Tech Stack */}

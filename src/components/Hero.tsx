@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Github, Linkedin, MapPin, Sparkles } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Sparkles, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -68,7 +68,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-2xl sm:text-3xl text-muted-foreground mb-6"
+              className="text-xl sm:text-2xl text-muted-foreground mb-6"
             >
               Senior Software Engineer · Backend & Full-Stack
             </motion.h2>
@@ -133,6 +133,16 @@ export default function Hero() {
                 <a href="mailto:aviisekh@gmail.com">
                   <Mail className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
                   Get In Touch
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="group">
+                <a
+                  href={`${process.env.NEXT_PUBLIC_BASE_PATH}/Abhishek_Bhatta_Resume.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FileText className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
+                  Resume
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="group">

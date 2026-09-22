@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   output: isProd ? 'export' : undefined,
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
+  },
   images: {
     unoptimized: isProd, // Required for static export
     remotePatterns: [
