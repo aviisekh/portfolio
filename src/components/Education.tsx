@@ -50,7 +50,6 @@ export default function Education() {
     <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          label="education"
           title="Education & Certifications"
           subtitle="Academic background and professional certifications"
         />

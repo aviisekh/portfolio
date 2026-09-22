@@ -134,7 +134,6 @@ export default function Experience() {
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          label="experience"
           title="Experience"
           subtitle="8+ years building and scaling production SaaS for US-based companies, remotely"
         />

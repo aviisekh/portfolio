@@ -52,9 +52,9 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection("about")}
-            className="font-mono text-base font-semibold hover:text-primary transition-colors"
+            className="text-xl font-bold hover:text-primary transition-colors"
           >
-            <span className="text-primary">~/</span>abhishek
+            AB
           </button>
 
           {/* Desktop Navigation */}
@@ -63,7 +63,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="px-4 py-2 font-mono text-sm hover:text-primary transition-colors relative group"
+                className="px-4 py-2 text-sm font-medium hover:text-primary transition-colors relative group"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />

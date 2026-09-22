@@ -59,7 +59,6 @@ export default function Skills() {
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          label="stack"
           title="Skills"
           subtitle="Tools and patterns I use in production"
         />

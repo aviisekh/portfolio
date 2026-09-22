@@ -79,7 +79,6 @@ export default function Projects() {
     <section id="work" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          label="selected-work"
           title="Selected Work"
           subtitle="A few systems I designed or owned, and the problem each one solved"
         />
