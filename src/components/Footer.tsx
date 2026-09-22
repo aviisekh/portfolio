@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,8 +11,8 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Abhishek Bhatta</h3>
             <p className="text-sm text-muted-foreground">
-              Senior Software Engineer specializing in fullstack development, 
-              multi-tenant SaaS platforms, and AI-powered applications.
+              Senior Software Engineer building multi-tenant SaaS platforms,
+              scalable backends, and production AI features.
             </p>
           </div>
 
@@ -28,12 +28,8 @@ export default function Footer() {
                 aviisekh@gmail.com
               </a>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                +977 9843288950
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                Kathmandu, Nepal
+                Lalitpur, Nepal
               </div>
             </div>
           </div>

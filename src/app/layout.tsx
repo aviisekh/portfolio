@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Abhishek Bhatta - Senior Software Engineer",
-  description: "Fullstack engineer with 8+ years of experience in scalable applications, multi-tenant SaaS platforms, AI-powered applications, and system architecture.",
+  description: "Senior backend & full-stack engineer with 8+ years scaling multi-tenant SaaS on Rails, Python, PostgreSQL, GCP and AWS — plus production RAG/AI pipelines.",
 };
 
 // Replace with your actual Google Analytics measurement ID

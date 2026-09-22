@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const education = [
   {
-    degree: "Bachelor of Computer Science",
+    degree: "Bachelor of Computer Engineering",
     field: "Computer Engineering",
     institution: "Kathmandu University, Nepal",
     gpa: "3.64 out of 4.0",
@@ -153,33 +153,6 @@ export default function Education() {
           </motion.div>
         </div>
 
-        {/* Achievement summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4"
-        >
-          <Card className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-            <CardContent className="pt-6">
-              <div className="text-3xl font-bold text-primary mb-2">8+</div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
-            </CardContent>
-          </Card>
-          <Card className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-            <CardContent className="pt-6">
-              <div className="text-3xl font-bold text-primary mb-2">6</div>
-              <div className="text-sm text-muted-foreground">Companies Worked With</div>
-            </CardContent>
-          </Card>
-          <Card className="text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-            <CardContent className="pt-6">
-              <div className="text-3xl font-bold text-primary mb-2">5</div>
-              <div className="text-sm text-muted-foreground">Professional Certifications</div>
-            </CardContent>
-          </Card>
-        </motion.div>
       </div>
     </section>
   );

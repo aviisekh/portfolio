@@ -30,11 +30,10 @@ export default function Navigation() {
 
   const navItems = [
     { label: "About", id: "about" },
-    { label: "Skills", id: "skills" },
+    { label: "Work", id: "work" },
     { label: "Experience", id: "experience" },
+    { label: "Skills", id: "skills" },
     { label: "Education", id: "education" },
-    { label: "GitHub", id: "github" },
-    { label: "Blog", id: "blog" },
   ];
 
   if (!mounted) {
