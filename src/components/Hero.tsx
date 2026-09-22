@@ -49,7 +49,7 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
               </span>
-              <span className="text-sm font-medium">Open to senior roles · Remote</span>
+              <span className="text-sm font-medium">Open to senior roles · On-site, hybrid or remote</span>
             </motion.div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
@@ -118,7 +118,7 @@ export default function Hero() {
               </a>
               <span className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                Lalitpur, Nepal · Remote
+                Lalitpur, Nepal
               </span>
             </motion.div>
 
