@@ -4,14 +4,15 @@ import path from "node:path";
 const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'portfolio';
+// Served from the root of the custom domain (public/CNAME), so no base path.
+const basePath = '';
 
 const nextConfig: NextConfig = {
   output: isProd ? 'export' : undefined,
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}` : '',
+  basePath,
+  assetPrefix: basePath,
   env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
+    NEXT_PUBLIC_BASE_PATH: basePath,
   },
   images: {
     unoptimized: isProd, // Required for static export
